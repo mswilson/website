@@ -5,7 +5,7 @@ description: A guide for open source database services.
 
 ## What are databases?
 
-A database is an organized collection of data. As databases become more complex they are often developed using formal design and modeling techniques. Databases may be classified into two different types: Relational, where the data is modeled as rows and columns in a series of tables and use SQL for writing and querying data; and non-relational, or NoSQL databases, which contains subgroups such as Document databases and key-value databases. [1](https://en.wikipedia.org/wiki/Database)
+A [database](https://en.wikipedia.org/wiki/Database) is an organized collection of data. As databases become more complex they are often developed using formal design and modeling techniques. Databases may be classified into two different types: Relational, where the data is modeled as rows and columns in a series of tables and use SQL for writing and querying data; and non-relational, or NoSQL databases, which contains subgroups such as Document databases and key-value.
 
 ## Why is this important for hybrid cloud developers?
 
@@ -28,31 +28,32 @@ Since the choices of OSS databases are varied, chances are, whatever your ultima
 
 Finally, because the database will contain the part of your application that is difficult to "re-create", e.g., customer data, feedback, orders, and so on, it is crucial that you plan to backup the data in your database (sooner than later) and have a strategy for recovery. Many cloud providers and cloud databases have built in backup / restore processes. But you typically have to opt in to these.
 
-## Key open source projects
+## Key database applications
+The next three tables contain a sample of database applications that provide source code. Note that not all of these database applications are open-source software, as some are provided under a license that prevents their deployment or sale in certain circumstances. Always check the software license and review its terms, and seek legal counsel if you have questions about the terms of a software license.
 
 ### SQL
 
 | Project | Code | Get started |
-| - | - | - | - |
-| [PostgreSQL](https://www.postgresql.org) | [GitHub repo](https://github.com/postgres/postgres) | [Documentation](https://www.postgresql.org/docs)|
-| [MariaDB](https://mariadb.org) | [GitHub repo](https://github.com/MariaDB/server) | [Documentation](https://mariadb.org/documentation)|
-| [CoackroachDB](https://www.cockroachlabs.com) | [GitHub repo](https://github.com/cockroachdb/cockroach) | [Documentation](https://www.cockroachlabs.com/docs/stable)|
+| - | - | - |
+| [PostgreSQL](https://www.postgresql.org) | [GitHub repo](https://github.com/postgres/postgres) | [Documentation](https://www.postgresql.org/docs) |
+| [MariaDB](https://mariadb.org) | [GitHub repo](https://github.com/MariaDB/server) | [Documentation](https://mariadb.org/documentation) |
+| [CoackroachDB](https://www.cockroachlabs.com)[^1] | [GitHub repo](https://github.com/cockroachdb/cockroach) | [Documentation](https://www.cockroachlabs.com/docs/stable) |
 
 
 ### Document
 
 | Project | Code | Get started |
-| - | - | - | - |
+| - | - | - |
 | [Cassandra](https://cassandra.apache.org/) | [GitHub repo](https://github.com/apache/cassandra) | [Get started](https://cassandra.apache.org/_/quickstart.html) |
-| [CouchDB](https://couchdb.apache.org/) | [GitHub repo](https://github.com/apache/couchdb) | [Documentation](https://docs.couchdb.org/)|
-| [MongoDB](https://www.mongodb.com/) | [GitHub repo](https://github.com/mongodb/mongo) | [Documentation](https://docs.mongodb.com/) |
+| [CouchDB](https://couchdb.apache.org/) | [GitHub repo](https://github.com/apache/couchdb) | [Documentation](https://docs.couchdb.org/) |
+| [MongoDB](https://www.mongodb.com/)[^1] | [GitHub repo](https://github.com/mongodb/mongo) | [Documentation](https://docs.mongodb.com/) |
 
 ### Key-value
 
 | Project | Code | Get started |
-| - | - | - | - |
-| [etcd](https://etcd.io) | [GitHub repo](https://github.com/etcd-io/etcd) | [Documentation](https://etcd.io/docs/)|
-| [Redis](https://redis.io) | [GitHub repo](https://github.com/redis/redis) | [Documentation](https://redis.io/documentation)|
+| - | - | - |
+| [etcd](https://etcd.io) | [GitHub repo](https://github.com/etcd-io/etcd) | [Documentation](https://etcd.io/docs/) |
+| [Redis](https://redis.io) | [GitHub repo](https://github.com/redis/redis) | [Documentation](https://redis.io/documentation) |
 
 ## Cloud comparision
 
@@ -75,3 +76,5 @@ Finally, because the database will contain the part of your application that is 
 
 * [What is NoSQL? | IBM Cloud Learn Hub](https://www.ibm.com/cloud/learn/nosql-databases)
 * [When to use NoSQL? | MongoDB](https://www.mongodb.com/nosql-explained/when-to-use-nosql)
+
+[^1]: Note that this database application is not provided under a community-accepted open-source license that has been approved through the Open Source Initiative review process. A list of community accepted and approved licenses can be found [here](https://opensource.org/licenses).
